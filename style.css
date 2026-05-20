@@ -1,9 +1,8 @@
 body{
 margin:0;
-font-family:Arial,sans-serif;
+font-family:'Space Grotesk', sans-serif;
 background:#111;
 color:white;
-scroll-behavior:smooth;
 }
 
 nav{
@@ -39,13 +38,19 @@ text-align:center;
 }
 
 .hero h1{
-font-size:80px;
-margin:0;
+font-family:'Archivo Black', sans-serif;
+font-size:90px;
+letter-spacing:-3px;
 }
 
 .hero p{
 font-size:22px;
 opacity:.7;
+}
+
+h2{
+font-family:'Space Grotesk', sans-serif;
+font-weight:700;
 }
 
 section{
