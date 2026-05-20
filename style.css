@@ -15,10 +15,12 @@ width:100%;
 box-sizing:border-box;
 background:#1e293b; /* blue-gray navbar */
 backdrop-filter:blur(10px);
+z-index:1000;
 }
 
+
 .card{
-background:#334155; /* blue cards instead of near-black */
+background:#334155; /* blue cards */
 padding:30px;
 border-radius:20px;
 transition:.3s;
