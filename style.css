@@ -1,8 +1,8 @@
 body{
 margin:0;
 font-family:'Space Grotesk', sans-serif;
-background:#0f172a;
-color:white;
+background:#0f172a; /* dark blue background */
+color:#f8fafc; /* softer white */
 }
 
 nav{
@@ -13,60 +13,12 @@ padding:20px 50px;
 position:fixed;
 width:100%;
 box-sizing:border-box;
-background:#1e293b;
+background:#1e293b; /* blue-gray navbar */
 backdrop-filter:blur(10px);
 }
 
-.logo{
-font-size:24px;
-font-weight:bold;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin-left:20px;
-}
-
-.hero{
-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-}
-
-.hero h1{
-font-family:'Archivo Black', sans-serif;
-font-size:90px;
-letter-spacing:-3px;
-}
-
-.hero p{
-font-size:22px;
-opacity:.7;
-}
-
-h2{
-font-family:'Space Grotesk', sans-serif;
-font-weight:700;
-}
-
-section{
-padding:100px;
-max-width:1200px;
-margin:auto;
-}
-
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-}
-
 .card{
-background:#1f1f1f;
+background:#334155; /* blue cards instead of near-black */
 padding:30px;
 border-radius:20px;
 transition:.3s;
@@ -74,4 +26,5 @@ transition:.3s;
 
 .card:hover{
 transform:translateY(-10px);
+background:#475569; /* lighter blue on hover */
 }
