@@ -75,3 +75,31 @@ background:#475569;
 transform:none;
 background:#334155;
 }
+.glow{
+position:fixed;
+width:500px;
+height:500px;
+background:radial-gradient(
+circle,
+rgba(59,130,246,.5),
+transparent 70%
+);
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+filter:blur(100px);
+animation:floatGlow 8s ease-in-out infinite;
+pointer-events:none;
+z-index:-1;
+}
+@keyframes floatGlow{
+0%{
+transform:translate(-50%,-50%);
+}
+50%{
+transform:translate(-45%,-55%);
+}
+100%{
+transform:translate(-50%,-50%);
+}
+}
