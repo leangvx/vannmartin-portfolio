@@ -15,7 +15,6 @@ width:100%;
 box-sizing:border-box;
 background:#1e293b; /* blue-gray navbar */
 backdrop-filter:blur(10px);
-z-index:1000;
 }
 
 
@@ -24,6 +23,7 @@ background:#334155; /* blue cards */
 padding:30px;
 border-radius:20px;
 transition:.3s;
+z-index:-1;
 }
 
 .card:hover{
