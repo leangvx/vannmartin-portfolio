@@ -1,32 +1,77 @@
 body{
 margin:0;
-font-family:'Space Grotesk', sans-serif;
-background:#0f172a; /* dark blue background */
-color:#f8fafc; /* softer white */
+font-family:'Space Grotesk',sans-serif;
+background:#0f172a;
+color:#f8fafc;
+scroll-behavior:smooth;
 }
-
 nav{
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:20px 50px;
+padding:20px 60px;
 position:fixed;
 width:100%;
 box-sizing:border-box;
-background:#1e293b; /* blue-gray navbar */
-backdrop-filter:blur(10px);
+background:#1e293b;
+z-index:1000;
 }
-
-
+.logo{
+font-size:24px;
+font-weight:bold;
+}
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+}
+nav a:hover{
+opacity:.7;
+}
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:0 20px;
+}
+.hero h1{
+font-family:'Archivo Black',sans-serif;
+font-size:110px;
+letter-spacing:-4px;
+margin:0;
+}
+.hero p{
+font-size:22px;
+opacity:.7;
+margin-top:20px;
+}
+section{
+padding:100px;
+max-width:1200px;
+margin:auto;
+}
+h2{
+font-size:50px;
+}
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
 .card{
-background:#334155; /* blue cards */
+background:#334155;
 padding:30px;
 border-radius:20px;
 transition:.3s;
-z-index:-1;
 }
-
 .card:hover{
 transform:translateY(-10px);
-background:#475569; /* lighter blue on hover */
+background:#475569;
+}
+#skills .card:hover{
+transform:none;
+background:#334155;
 }
