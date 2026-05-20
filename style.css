@@ -1,7 +1,7 @@
 body{
 margin:0;
 font-family:'Space Grotesk', sans-serif;
-background:#111;
+background:#0f172a;
 color:white;
 }
 
@@ -13,7 +13,7 @@ padding:20px 50px;
 position:fixed;
 width:100%;
 box-sizing:border-box;
-background:rgba(20,60,60,.8);
+background:#1e293b;
 backdrop-filter:blur(10px);
 }
 
