@@ -1,83 +1,218 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Vannmartin Portfolio</title>
+<title>Vannmartin Leang | Portfolio</title>
 <link rel="stylesheet" href="style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Archivo+Black&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-<div class="glow"></div>
-<nav>
-    <div class="logo">Portfolio</div>
+<header class="topbar">
+  <a class="logo" href="#home">vannmartin leang</a>
+  <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  <nav class="nav-links">
+    <a href="#projects">projects</a>
+    <a href="#skills">skills</a>
+    <a href="#about">about</a>
+    <a href="#resume">resume</a>
+    <a href="#contact">contact</a>
+  </nav>
+</header>
 
-    <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
+<main>
+  <section class="hero" id="home">
+    <div class="hero-copy reveal">
+      <p class="note">Welcome</p>
+      <h1>Hello, I'm Vannmartin Leang.</h1>
+      <p class="degree-line">B.S. in Information Technology, James Madison University, Class of 2026</p>
+      <p class="intro">I am a junior software engineer focused on web applications and frontend development.</p>
     </div>
-</nav>
+    <div class="hero-aside reveal">
+      <div class="focus-board" aria-label="portfolio focus snapshot">
+        <div class="focus-header">
+          <span>I make</span>
+          <strong>responsive interfaces and applications</strong>
+        </div>
+        <div class="focus-rows">
+          <div class="focus-row">
+            <span class="focus-label">frontend</span>
+            <span class="focus-line"></span>
+            <span class="focus-value">interactive web apps</span>
+          </div>
+          <div class="focus-row">
+            <span class="focus-label">coding</span>
+            <span class="focus-line"></span>
+            <span class="focus-value">clear, maintainable logic</span>
+          </div>
+          <div class="focus-row">
+            <span class="focus-label">AI/ML</span>
+            <span class="focus-line"></span>
+            <span class="focus-value">implementing efficient models </span>
+          </div>
+        </div>
+        <div class="focus-footer">
+          <span class="pulse-dot"></span>
+          <span>seeking entry-level opportunities</span>
+        </div>
+      </div>
+      <p>open to software, web, cloud, game dev roles</p>
+    </div>
+  </section>
 
-<section class="hero">
-    <h1>Vannmartin Leang</h1>
-    <p>Recent Graduate • Developer • Programmer</p>
-</section>
+  <section class="section work" id="projects">
+    <div class="section-heading reveal">
+      <p class="note">projects</p>
+      <h2>featured work</h2>
+    </div>
+    <div class="work-list reveal">
+      <article class="work-item">
+        <div class="work-thumb">
+          <img src="assets/projects/soccer-checkin.png" alt="Soccer Group Game Checkin screenshot">
+        </div>
+        <div class="work-copy">
+          <p class="work-meta">mobile web app</p>
+          <h3>Soccer Group Game Checkin</h3>
+          <p>A mobile web app and admin interface to streamline scheduling and logistics for recreational soccer matches in friend groups</p>
+          <a href="https://staging.soccercheckin.com" target="_blank" rel="noopener">staging.soccercheckin.com</a>
+          <a href="https://staging.soccercheckin.com/admin" target="_blank" rel="noopener">staging.soccercheckin.com/admin</a>
+        </div>
+      </article>
+      <article class="work-item">
+        <div class="work-thumb">
+          <img src="assets/projects/balboa-bakery.png" alt="Balboa Bakery & Donuts website screenshot">
+        </div>
+        <div class="work-copy">
+          <p class="work-meta">promotional website</p>
+          <h3>Balboa Bakery & Donuts</h3>
+          <p>A promotional website for local bakery deli with responsive design using HTML, CSS, and JavaScript.</p>
+          <a href="https://balboabakerydonuts.com" target="_blank" rel="noopener">balboabakerydonuts.com</a>
+        </div>
+      </article>
+      <article class="work-item">
+        <div class="work-thumb">
+          <img src="assets/projects/unity-game.png" alt="Unity Game screenshot">
+        </div>
+        <div class="work-copy">
+          <p class="work-meta">game development / research project</p>
+          <h3>Unity Game</h3>
+          <p>A proof-of-concept C# game in Unity Engine framework designed to target the researched aspects of replayability for consumers.</p>
+          <a href="https://leangvx.itch.io/unity-game" target="_blank" rel="noopener">leangvx.itch.io/unity-game</a>
+        </div>
+      </article>
+      <article class="work-item">
+        <div class="work-thumb">
+          <img src="assets/projects/deepfake-detection.png" alt="Real-time Deepfake Image Detection screenshot">
+        </div>
+        <div class="work-copy">
+          <p class="work-meta">ai models / research project</p>
+          <h3>Real-time Deepfake Image Detection</h3>
+          <p>A lightweight deepfake detection system using CNN classification model in WebRTC video conferencing application, made to protect against artificially generated video streams.</p>
+        </div>
+      </article>
+    </div>
+  </section>
 
-<section id="about">
-    <h2>About Me</h2>
-    <p>
-        Welcome to my portfolio website. I enjoy software development,
-        game development, and creating projects.
-    </p>
-</section>
+  <section id="skills" class="split-section">
+    <div>
+      <p class="section-label">Skills</p>
+      <h2>Technical toolkit.</h2>
+    </div>
+    <div class="tag-list">
+      <span>Python</span>
+      <span>Java</span>
+      <span>JavaScript</span>
+      <span>C#</span>
+      <span>C++</span>
+      <span>SQL</span>
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JUnit framework</span>
+      <span>Microsoft Azure AI</span>
+      <span>Cypress</span>
+      <span>AWS</span>
+      <span>Kubernetes</span>
+      <span>Unity Engine</span>
+      <span>Visual Studio</span>
+      <span>Git</span>
+      <span>Docker</span>
+      <span>MySQL</span>
+      <span>PostgreSQL</span>
+      <span>Wireshark</span>
+      <span>Agile Development</span>
+      <span>Scrum</span>
+      <span>Machine Learning</span>
+      <span>Game Development</span>
+      <span>Cloud</span>
+      <span>Data Analysis</span>
+      <span>DevSecOps</span>
+      <span>Software Design</span>
+      <span>UML Diagrams</span>
+      <span>Operating Systems</span>
+      <span>FOSS</span>
+      <span>COTS</span>
+      <span>DevTools</span>
+      <span>REST API</span>
+    </div>
+  </section>
 
-<section id="skills">
-<h2>Skills</h2>
+  <section class="section about" id="about">
+    <div class="about-grid reveal">
+      <div>
+        <p class="note">about</p>
+        <h2>Attentive, detail-oriented, and easy to work with.</h2>
+      </div>
+      <div class="about-copy">
+        <p>I recently graduated with a Bachelor's degree in Information Technology and enjoy building across web, software, and game development. I care about clean structure, readable code, and interfaces that make sense the first time someone uses them.</p>
+        <p>I am continuing to grow as a developer while looking for opportunities where I can contribute, learn quickly, and build useful products with a team.</p>
+        <p>Additionally, I have certifications in AWS Cloud and Microsoft Azure AI and eligible to obtain a TS/SCI Clearance.</p>
+      </div>
+    </div>
+  </section>
 
-<div class="cards">
+  <section class="section resume" id="resume">
+    <div class="resume-card reveal">
+      <div>
+        <p class="note">resume</p>
+        <h2>quick look at my background, skills, and experience.</h2>
+      </div>
+      <div class="resume-actions">
+        <p>Click here to download my resume.</p>
+        <a class="resume-button" href="assets/resume/Vannmartin_Resume.pdf" target="_blank" rel="noopener">view resume</a>
+      </div>
+    </div>
+  </section>
 
-<div class="card">Python</div>
-<div class="card">Java</div>
-<div class="card">C++</div>
-<div class="card">Unity</div>
-<div class="card">SQL</div>
-<div class="card">HTML/CSS</div>
+  <section class="section contact" id="contact">
+    <div class="contact-wrap reveal">
+      <div>
+        <p class="note">contact</p>
+        <h2>my contact information.</h2>
+      </div>
+      <div class="contact-list" aria-label="contact details">
+        <a href="mailto:vannmartin@gmail.com">vannmartin@gmail.com</a>
+        <a href="tel:+15713760692">(571) 376-0692</a>
+        <a href="https://linkedin.com/in/vannmartinleang" target="_blank" rel="noopener">linkedin.com/in/vannmartinleang</a>
+      </div>
+    </div>
+  </section>
+</main>
 
-</div>
+<button class="scroll-cue" type="button" aria-label="Scroll to next section">
+  <span></span>
+</button>
 
-</section>
-
-<section id="projects">
-
-<h2>Projects</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>Project1</h3>
-<p>Description1.</p>
-</div>
-
-<div class="card">
-<h3>Project2</h3>
-<p>Description2.</p>
-</div>
-
-<div class="card">
-<h3>Project3</h3>
-<p>Description3.</p>
-</div>
-
-</div>
-
-</section>
+<footer>
+  <p>vannmartin leang</p>
+  <a href="#home">back to top</a>
+</footer>
 
 <script src="script.js"></script>
-
 </body>
 </html>
